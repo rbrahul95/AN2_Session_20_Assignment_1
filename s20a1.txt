@@ -1,0 +1,24 @@
+1) Open your project in eclipse
+2) Press right-mouse - > tools (android tools?) - > export signed application (apk?)
+Go through the wizard:
+3) Make a new key-store. remember that password
+4) Sign your app
+5)Save it etc.
+Compile and sign with Eclipse ADT
+
+If you are using Eclipse with the ADT plugin, you can use the Export Wizard to export a signed .apk (and even create a new keystore, if necessary). 
+The Export Wizard performs all the interaction with the Keytool and Jarsigner for you, which allows you to sign the package using a GUI instead of performing the manual procedures to compile, sign, and align, 
+as discussed above. Once the wizard has compiled and signed your package, it will also perform package alignment with zip align. Because the Export Wizard uses both Keytool and Jarsigner, 
+you should ensure that they are accessible on your computer, 
+as described above in the Basic Setup for Signing.
+
+To create a signed and aligned .apk in Eclipse:
+
+1)Select the project in the Package Explorer and select File > Export.
+2)Open the Android folder, select Export Android Application, and click Next.
+
+3)The Export Android Application wizard now starts, which will guide you through the process of signing your application, 
+including steps for selecting the private key with which to sign the .apk (or creating a new keystore and private key).
+Complete the Export Wizard and your application will be compiled, signed, aligned, and ready for distribution.
+
+https://developer.android.com/studio/publish/app-signing.html
